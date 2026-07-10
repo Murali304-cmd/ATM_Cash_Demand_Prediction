@@ -25,9 +25,9 @@ st.title("🏧 ATM Cash Demand Prediction")
 # Inputs
 col1, col2 = st.columns(2)
 with col1:
-    cash = st.number_input("Withdrawals (₹)", value=7500000000.0, step=1000000.0)
-    deposit = st.number_input("Deposits (₹)", value=345678.0)
-    balance = st.number_input("Balance (₹)", value=32456789.0)
+    cash = st.number_input("Withdrawals (₹)", value=500000.0, step=10000.0)
+    deposit = st.number_input("Deposits (₹)", value=100000.0)
+    balance = st.number_input("Balance (₹)", value=2000000.0)
 with col2:
     day = st.selectbox("Day", DAY_MAP.keys(), format_func=lambda x: DAY_MAP[x])
     time = st.selectbox("Time", TIME_MAP.keys(), format_func=lambda x: TIME_MAP[x])
